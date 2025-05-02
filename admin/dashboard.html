@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Painel do Administrador</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+      margin: 0;
+      background-color: #f4f4f4;
+    }
+
+    .header {
+      background-color: #343a40;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 40px auto;
+      background-color: white;
+      padding: 30px 40px;
+      border-radius: 12px;
+      box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 30px;
+      color: #333;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+
+    li {
+      width: 48%;
+      margin-bottom: 20px;
+    }
+
+    a.button {
+      display: block;
+      padding: 15px;
+      background-color: #007bff;
+      color: white;
+      border-radius: 8px;
+      text-align: center;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background-color 0.3s ease, transform 0.2s ease;
+    }
+
+    a.button:hover {
+      background-color: #0056b3;
+      transform: scale(1.03);
+    }
+
+    .novo-adm {
+      margin-top: 40px;
+      text-align: center;
+    }
+
+    .novo-adm a {
+      background-color: #6f42c1;
+    }
+
+    .novo-adm a:hover {
+      background-color: #563d7c;
+    }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <h1>Administração da Loja</h1>
+  </div>
+
+  <div class="container">
+    <h2>Bem-vindo, administrador!</h2>
+    <ul>
+      <li><a class="button" href="listar_produtos.php">📦 Ver produtos</a></li>
+      <li><a class="button" href="adicionar_produto.php">➕ Adicionar produto</a></li>
+    </ul>
+
+    <div class="novo-adm">
+      <h3>Gerenciar administradores</h3>
+      <a class="button" href="novo_admin.php">➕ Cadastrar novo administrador</a>
+    </div>
+  </div>
+</body>
+</html>
